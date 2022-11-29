@@ -20,7 +20,7 @@ function AuthContextProvider({ children }) {
 
   const value = {
     token: authToken,
-    isAuthenticated: !authToken,
+    isAuthenticated: !!authToken,
     authenticate: authenticate,
     logout: logout,
   };
